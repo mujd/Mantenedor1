@@ -1,0 +1,7 @@
+cliente_list:
+    path:     /Cliente/list
+    defaults: { _controller: ClienteBundle:Cliente:list }
+
+cliente_add:
+    path: /Cliente/add
+    defaults: { _controller: ClienteBundle:Cliente:add }

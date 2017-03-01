@@ -1,0 +1,27 @@
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Rut</th>
+        <th>Nombre</th>
+        <th>Apellido Paterno</th>
+        <th>Apellido Materno</th>
+        <th>Direccion</th>
+        <th>Email</th>
+        <th>Telefono</th>
+    </tr>
+    <tr>
+        {% for lista in cliente %}
+            <td>{{lista.id}}</td>
+            <td>{{lista.rut}}</td>
+            <td>{{lista.nombres}}</td>
+            <td>{{lista.apellidop}}</td>
+            <td>{{lista.apellidom}}</td>
+            <td>{{lista.direccion}}</td>
+            <td>{{lista.email}}</td>
+            <td>{{lista.fono}}</td>
+        
+    </tr>
+{% endfor %}
+</table>
+<a href={{path("cliente_add")}}>Agregar cliente</a>
+    

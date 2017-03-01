@@ -1,0 +1,9 @@
+{{ form_start(form) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}
+
+<div>{% for message in app.session.flashbag().get('mensaje') %}
+    <div>{{ message }}</div>
+{%endfor%}
+</div>
+{# para metodos se usan 2 {% %} con los signos de porcentaje dentro y se usan 4 para llamar variables #}
